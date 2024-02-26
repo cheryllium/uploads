@@ -1,0 +1,20 @@
+
+
+Working: discord login.
+
+- Uploads of different post types; text or image.
+- Text posts are stored in their own DB table. 
+
+- Images should be encrypted, with the server having the decryption key. This prevents people from seeing the image with the image URL.
+
+- Posts should have an optional title.
+- Be able to view existing posts.
+- Be able to share links to posts. Must be logged in to view.
+- Be able to delete posts.
+
+Next up:
+
+1. Design home page.
+2. Design logged-in page template. The dashboard should have buttons to upload text or images, and should show you a paginated list with thumbnails for your posts.
+3. When viewing a post that belongs to you, should show option to delete the post, or edit the post (for text posts). 
+
