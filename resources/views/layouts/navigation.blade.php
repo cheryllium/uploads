@@ -18,6 +18,9 @@
                     <x-nav-link :href="route('image.upload')" :active="request()->routeIs('image.upload')">
                         {{ __('Upload Image') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('about')" :active="request()->routeIs('about')">
+                        {{ __('About') }}
+                    </x-nav-link>
                 </div>
             </div>
 

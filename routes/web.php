@@ -20,6 +20,10 @@ Route::get('/', function () {
 });
 
 Route::middleware('auth')->group(function () {
+    Route::get('/about', function () {
+        return view('about'); 
+    })->name('about');
+    
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
 
     Route::get('/dashboard', [UploadsController::class, 'dashboard'])->name('dashboard'); 
