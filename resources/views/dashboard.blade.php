@@ -13,9 +13,23 @@
 
                     @if (!count($uploads))
                         <div>You have no uploads yet.</div>
+
+                        <p class="mt-3">
+                            <a href="{{ route('image.upload') }}">
+                                <x-secondary-button>Upload an Image</x-secondary-button>
+                            </a>
+                        </p>
                     @else
 
                         <p>You are using <b>{{ number_format($totalSize, 2, '.', ',') }} MiB</b> out of <b>{{ $sizeLimit }} MiB</b> allowed.</p>
+
+                        <p class="mt-3">
+                            <a href="{{ route('image.upload') }}">
+                                <x-secondary-button>Upload an Image</x-secondary-button>
+                            </a>
+                        </p>
+
+                        <hr class="my-3" />
 
                         <div class="mt-3">
                         @foreach($uploads as $upload)
